@@ -21,27 +21,28 @@
         <h2>Shadows properties</h2>
         <div>
           <p>Horizontal displacement</p>
-        <input type="range">
+        <input type="range" class="horizontal" min="-100" max="0" value="0">
         </div>
         <div>
           <p>Vertical displacement</p>
-          <input type="range">
+          <input type="range" class="vertical">
         </div>
         <div>
           <p>Spread radius</p>
-          <input type="range">
+          <input type="range" class="spread">
         </div>
         <div>
           <p>Blur radius</p>
-          <input type="range">
+          <input type="range" class="blur">
         </div>
         <div>
           <p>Shadow color</p>
-          <input type="color">
+          <input type="color" class="color-shadow">
         </div>
       </form>
     </section>
     <section class="box-container">
+      <div class="box"></div>
       <div class="shadow-box"></div>
     </section>
     <section class="box-properties">
@@ -49,28 +50,32 @@
         <h2>Box properties</h2>
         <div>
           <p>Border radius</p>
-          <input type="range">
+          <input type="range" class="corder-radius">
         </div>
         <div>
           <p>Height</p>
-          <input type="range">
+          <input type="range" class="height">
         </div>
         <div>
           <p>Width</p>
-          <input type="range">
+          <input type="range" class="width">
         </div>
         <div>
           <p>Box color</p>
-          <input type="color">
+          <input type="color" class="color-box">
         </div>
       </form>
     </section>
   </main>
   <footer class="footer-content">
-    <form class="copy-code">
+    
       <h2>CSS code</h2>
-      <input type="text">
-    </form>
+      <p class="window-p">Box shadow: 
+      </p>
+      
+      
+        
+    
   </footer>
   
 </body>

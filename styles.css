@@ -46,15 +46,14 @@ padding: 0 30px 0 50px;
   
   }
   .box-container{
-    height: 200px;
-    width: 70%;
+    height: 400px;
+    width: 100%;
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
     background-color: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+    position: relative;
    
     }
     
@@ -63,10 +62,16 @@ padding: 0 30px 0 50px;
   .shadow-box{
     height: 50px;
     width: 50px;
-    align-items: center;
-    justify-content: center;
+    display:block;
     background-color: green;
+    position: relative; top: 50%; left: 300px;
     }
+    .box{
+      height: 50px;
+      width: 50px;
+      
+      background-color: black;
+      position: relative; top: 50%; left: 200px;}
     .box-properties{
       grid-column: 3/4;
       align-items: center;
@@ -85,7 +90,7 @@ padding: 0 30px 0 50px;
       padding: 0px 0 100px 0;
     
     }
-    .copy-code{
+    .footer-content{
       display: flex;
       flex-direction: column;
       justify-content:flex-start;
@@ -94,9 +99,11 @@ padding: 0 30px 0 50px;
     .copy-code h2{
      font-size: 30px;
     }
-    .copy-code input{
+    .window-p{
       height: 130px;
       width: 50%;
+      background-color:white;
     }
-  
+
+    
   
