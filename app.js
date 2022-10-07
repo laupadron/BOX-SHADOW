@@ -14,6 +14,54 @@ const windowPa = document.querySelector(".window-p");
 
 
 horizontal.addEventListener("input", (e) =>{ 
-windowPa.innerHTML = `Box-shadow: ${e.target.value}px` ;
-shadowBox.style.left = `${e.target.value}px`
+  horizontalContent= `${e.target.value}`;
+  shadowBox.style.left = `${horizontalContent}px`;
+  windowPa.textContent = `box-shadow: ${horizontalContent}px`;
 });
+
+vertical.addEventListener("input", (e) =>{ 
+  verticalContent= `${e.target.value}`;
+  shadowBox.style.top = `${verticalContent}px`;
+  windowPa.textContent = `box-shadow: ${horizontalContent}px ${verticalContent}`;
+});
+
+spread.addEventListener("input", (e) =>{ 
+  spreadContent = `${e.target.value}`;
+  shadowBox.style.width = `${spreadContent}px`;
+  shadowBox.style.height = `${spreadContent}px`;
+  windowPa.textContent = `box-shadow: ${horizontalContent}px ${verticalContent}px ${spreadContent}px`;
+});
+
+
+
+colorShadow.addEventListener("input", (e) =>{ 
+  colorShadowContent= `${e.target.value}`;
+  colorShadow.onchange = ((value) => {
+  shadowBox.style.backgroundColor = colorShadow.value;
+} )
+  windowPa.textContent = `box-shadow: ${horizontalContent}px ${verticalContent}px ${spreadContent} ${colorShadowContent}rgb`;
+});
+
+blur.addEventListener("input", (e) =>{ 
+  blurContent= `${e.target.value}`;
+  shadowBox.style.blur = `${blurContent}px`;
+  windowPa.textContent = `box-shadow: ${horizontalContent}px ${verticalContent} ${spreadContent} ${colorShadowContent}rgb ${blurContent}`;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
